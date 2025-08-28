@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 Movie Library</h1>
+    <input type="text" id="searchInput" placeholder="Search movies...">
+    <select id="filterCategory">
+      <option value="all">All Categories</option>
+      <option value="action">Action</option>
+      <option value="drama">Drama</option>
+      <option value="sci-fi">Sci-Fi</option>
+    </select>
+  </header>
+
+  <main id="movieContainer" class="grid"></main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <img id="modal-img" src="" alt="">
+      <div class="modal-info">
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+        <div id="modal-video-container">
+          <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
